@@ -9,7 +9,7 @@ const chillax = localFont({
 })
 
 const Navbar = () => {
-  return <div className="bg-[#E7E5E4] pt-10">
+  return <div className="pt-10">
     <main className="w-11/12 mx-auto flex gap-8 items-center">
       <div className="flex items-center">
         <h1 className={`${chillax.className} font-bold text-3xl`}>Karma UI</h1>
