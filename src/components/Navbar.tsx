@@ -15,7 +15,7 @@ const Navbar = () => {
         <h1 className={`${chillax.className} font-bold text-3xl`}>Karma UI</h1>
       </div>
       <div className="h-[2px] w-[60px] bg-black rounded-3xl"></div>
-      <div className="h-[30px] w-[120px] rounded-3xl bg-[#d2cfce] flex items-center px-2 justify-between cursor-pointer">
+      <div className="h-[30px] w-[120px] rounded-3xl bg-[#d2cfce] flex items-center px-2 justify-between cursor-pointer hover:bg-[#ffffff] transition-all ease duration-500 hover:outline outline-1 outline-black">
         <Search size={18} />
         <p>Search</p>
       </div>
