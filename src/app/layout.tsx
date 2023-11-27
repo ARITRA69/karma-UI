@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
+import TopbarBanner from "@/components/TopbarBanner";
 
 const inter = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-[#E7E5E4]`}>
         <SmoothScroll>
+          <TopbarBanner />
           <Navbar />
           {children}
           <Footer />
