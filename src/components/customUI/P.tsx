@@ -1,13 +1,13 @@
 import { FC, ReactNode } from "react";
 
-interface HeadingProps {
+interface Props {
   children: ReactNode;
   className?: string;
 }
 
-const P: FC<HeadingProps> = (props) => {
+const P: FC<Props> = (props) => {
   return (
-    <p className={`${props.className} text-sm lg:text-base`}>
+    <p className={`text-sm lg:text-base ${props.className}`}>
       {props.children}
     </p>
   );
