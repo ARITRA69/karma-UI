@@ -55,7 +55,7 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <Link href="/documents">
+      <Link href="/docs">
         <div className="h-[56px] flex items-center gap-5 bg-foreground w-44 border-foreground border-x-4 rounded-full group relative">
           <p className="text-lg text-background pl-5 absolute translate-x-10 group-hover:-translate-x-2 ease-in-out duration-500 ">
             Get Started

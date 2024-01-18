@@ -2,14 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { ThemeToggle } from "./theme-toggle";
+import Search from "@/components/search/search";
 
 const navLinks = [
   {
-    title: "Github",
+    title: "Docs",
     link: "/",
   },
   {
-    title: "aritra",
+    title: "Pricing",
     link: "/",
   },
 ];
@@ -29,10 +30,11 @@ const Header = () => {
           <h1 className="text-2xl">Karma-UI</h1>
           <div className="border-b-2 w-20 border-foreground/70" />
         </Link>
-        <div className="flex items-center gap-6">
-          <nav className="sm:flex gap-3 hidden">
+        <div className="flex items-center gap-10">
+          <Search />
+          <nav className="sm:flex gap-6 hidden">
             {navLinks.map((navLink, i) => (
-              <Link href={navLink.link} key={i}>
+              <Link href={navLink.link} key={i} className="hover:underline">
                 {navLink.title}
               </Link>
             ))}
