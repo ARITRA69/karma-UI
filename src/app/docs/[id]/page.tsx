@@ -1,14 +1,11 @@
-"use client";
 import Container from "@/components/Container";
 import Section from "@/components/Section";
-import { useParams } from "next/navigation";
 import React from "react";
 
-const UIComponent = () => {
-  const params = useParams();
+const UIComponent = ({ params }: { params: { componentID: string } }) => {
   return (
     <div>
-      <Container
+      {/* <Container
         title="Button"
         description="Tap the button for instant tech magic!"
       >
@@ -71,7 +68,8 @@ const UIComponent = () => {
           <div className="bg-violet-600/50 p-3 rounded-lg">component 1</div>
           <div className="bg-violet-600/50 p-3 rounded-lg">component 1</div>
         </Section>
-      </Container>
+      </Container> */}
+      {params.componentID}
     </div>
   );
 };
